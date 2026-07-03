@@ -1,0 +1,32 @@
+body {
+    font-family: system-ui, sans-serif;
+    background: #fdf6ee;
+    color: #1e2a3a;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px;
+}
+h1 { color: #7a2e1d; }
+nav a {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 8px 14px;
+    border: 1px solid #d8c3ad;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #1e2a3a;
+}
+.card {
+    border: 1px solid #e6d6c2;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 16px 0;
+    background: #fffaf3;
+}
+.insight-card { border-color: #cfe0d8; background: #f4faf6; }
+.receipt-card { background: #fff; border: 1px solid #ccc; border-radius: 8px; padding: 16px; }
+.pricing-grid { display: flex; gap: 24px; flex-wrap: wrap; }
+.price-figure { font-size: 1.8em; font-weight: bold; color: #7a2e1d; }
+label { display: block; margin-top: 12px; font-weight: bold; }
+select, .radio-row { margin-top: 4px; }
+button { margin-top: 16px; padding: 10px 18px; border-radius: 20px; border: none; background: #7a2e1d; color: #fff; cursor: pointer; }
