@@ -11,14 +11,6 @@ require "order_functions.php";
 <body>
 
 <h1>Bistro Order Studio</h1>
-<p>Build a dessert-and-drink order, submit it through PHP, and return later to see how session variables keep the form state intact.</p>
-
-<nav>
-    <a href="../instructions.html">Assignment Guide</a>
-    <a href="index.php">Order Form</a>
-    <a href="process_order.php">Latest Receipt</a>
-    <a href="about.php">How It Works</a>
-</nav>
 
 <div class="card insight-card">
     <h3>Live guidance</h3>
