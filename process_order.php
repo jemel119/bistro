@@ -43,14 +43,6 @@ $orderSummary = order();
 </div>
 
 <div class="card">
-    <h3>What happened behind the scenes</h3>
-    <ul>
-        <li>The form submitted dessert, drink, and drink size with the POST method.</li>
-        <li>PHP stored each value in a session variable.</li>
-        <li>Any missing value was replaced with (not selected).</li>
-        <li>The helper function returned a display string with HTML line breaks.</li>
-        <li>The page adds completion feedback and a pairing suggestion to make the assignment feel more interactive.</li>
-    </ul>
     <a href="index.php">Order Again</a> |
     <a href="about.php">Read the Explanation</a> |
     <form action="forget_order.php" method="POST" style="display:inline;">
