@@ -72,13 +72,6 @@ require "order_functions.php";
 </form>
 
 <div class="card">
-    <h3>Assignment checklist</h3>
-    <ul>
-        <li>Submit the form through PHP.</li>
-        <li>Store dessert, drink, and drink size in session variables.</li>
-        <li>Restore previous selections when the user orders again.</li>
-        <li>Clear the session with the Forget Order page.</li>
-    </ul>
     <p><strong>Saved session snapshot</strong></p>
     <p>Dessert: <?= htmlspecialchars(sessionValue('dessert')); ?></p>
     <p>Drink: <?= htmlspecialchars(sessionValue('drink')); ?></p>
