@@ -11,15 +11,18 @@ $orderSummary = order();
 </head>
 <body>
 
-<h1>Your Bistro Receipt</h1>
-<p>The submitted values have been processed by PHP and saved to the session so the form can be repopulated when you return.</p>
-
-<nav>
-    <a href="../instructions.html">Assignment Guide</a>
-    <a href="index.php">Order Form</a>
-    <a href="process_order.php">Latest Receipt</a>
-    <a href="about.php">How It Works</a>
-</nav>
+<header class="hero">
+    <div class="hero-text">
+        <p class="eyebrow">Homework 03</p>
+        <h1>Your Bistro Receipt</h1>
+        <p class="lead">The submitted values have been processed by PHP and saved to the session so the form can be repopulated when you return.</p>
+    </div>
+    <nav>
+        <a href="index.php">Order Form</a>
+        <a href="process_order.php">Latest Receipt</a>
+        <a href="about.php">How It Works</a>
+    </nav>
+</header>
 
 <h3>Submitted order</h3>
 <div class="receipt-card"><?= $orderSummary; ?></div>
@@ -43,11 +46,21 @@ $orderSummary = order();
 </div>
 
 <div class="card">
-    <a href="index.php">Order Again</a> |
-    <a href="about.php">Read the Explanation</a> |
-    <form action="forget_order.php" method="POST" style="display:inline;">
-        <button type="submit">Forget Order</button>
-    </form>
+    <h3>What happened behind the scenes</h3>
+    <ul>
+        <li>The form submitted dessert, drink, and drink size with the POST method.</li>
+        <li>PHP stored each value in a session variable.</li>
+        <li>Any missing value was replaced with (not selected).</li>
+        <li>The helper function returned a display string with HTML line breaks.</li>
+        <li>The page adds completion feedback and a pairing suggestion to make the assignment feel more interactive.</li>
+    </ul>
+    <div class="action-row">
+        <a class="btn" href="index.php">Order Again</a>
+        <a class="btn btn-secondary" href="about.php">Read the Explanation</a>
+        <form action="forget_order.php" method="POST">
+            <button type="submit" class="btn-outline">Forget Order</button>
+        </form>
+    </div>
 </div>
 
 </body>

@@ -10,7 +10,18 @@ require "order_functions.php";
 </head>
 <body>
 
-<h1>Bistro Order Studio</h1>
+<header class="hero">
+    <div class="hero-text">
+        <p class="eyebrow">Homework 03</p>
+        <h1>Bistro Order Studio</h1>
+        <p class="lead">Build a dessert-and-drink order, submit it through PHP, and return later to see how session variables keep the form state intact.</p>
+    </div>
+    <nav>
+        <a href="index.php">Order Form</a>
+        <a href="process_order.php">Latest Receipt</a>
+        <a href="about.php">How It Works</a>
+    </nav>
+</header>
 
 <div class="card insight-card">
     <h3>Live guidance</h3>
@@ -60,10 +71,17 @@ require "order_functions.php";
 </form>
 
 <form action="forget_order.php" method="POST">
-    <button type="submit">Forget Saved Order</button>
+    <button type="submit" class="btn-outline">Forget Saved Order</button>
 </form>
 
 <div class="card">
+    <h3>Assignment checklist</h3>
+    <ul>
+        <li>Submit the form through PHP.</li>
+        <li>Store dessert, drink, and drink size in session variables.</li>
+        <li>Restore previous selections when the user orders again.</li>
+        <li>Clear the session with the Forget Order page.</li>
+    </ul>
     <p><strong>Saved session snapshot</strong></p>
     <p>Dessert: <?= htmlspecialchars(sessionValue('dessert')); ?></p>
     <p>Drink: <?= htmlspecialchars(sessionValue('drink')); ?></p>

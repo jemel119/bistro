@@ -10,15 +10,18 @@ require "order_functions.php";
 </head>
 <body>
 
-<h1>How the Bistro Order Flow Works</h1>
-<p>This page explains how the front end, PHP processing, and session memory work together across the assignment.</p>
-
-<nav>
-    <a href="../instructions.html">Assignment Guide</a>
-    <a href="index.php">Order Form</a>
-    <a href="process_order.php">Latest Receipt</a>
-    <a href="about.php">How It Works</a>
-</nav>
+<header class="hero">
+    <div class="hero-text">
+        <p class="eyebrow">Homework 03</p>
+        <h1>How the Bistro Order Flow Works</h1>
+        <p class="lead">This page explains how the front end, PHP processing, and session memory work together across the assignment.</p>
+    </div>
+    <nav>
+        <a href="index.php">Order Form</a>
+        <a href="process_order.php">Latest Receipt</a>
+        <a href="about.php">How It Works</a>
+    </nav>
+</header>
 
 <div class="card">
     <h3>Page responsibilities</h3>
@@ -56,10 +59,12 @@ require "order_functions.php";
         <?= htmlspecialchars(sessionValue('drink')); ?>,
         <?= htmlspecialchars(sessionValue('drinkSize')); ?>
     </p>
-    <a href="index.php">Return to Form</a> |
-    <form action="forget_order.php" method="POST" style="display:inline;">
-        <button type="submit">Clear Saved Order</button>
-    </form>
+    <div class="action-row">
+        <a class="btn" href="index.php">Return to Form</a>
+        <form action="forget_order.php" method="POST">
+            <button type="submit" class="btn-outline">Clear Saved Order</button>
+        </form>
+    </div>
 </div>
 
 </body>
