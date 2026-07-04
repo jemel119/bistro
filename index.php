@@ -82,10 +82,6 @@ require "order_functions.php";
         <li>Restore previous selections when the user orders again.</li>
         <li>Clear the session with the Forget Order page.</li>
     </ul>
-    <p><strong>Saved session snapshot</strong></p>
-    <p>Dessert: <?= htmlspecialchars(sessionValue('dessert')); ?></p>
-    <p>Drink: <?= htmlspecialchars(sessionValue('drink')); ?></p>
-    <p>Size: <?= htmlspecialchars(sessionValue('drinkSize')); ?></p>
 </div>
 
 </body>
